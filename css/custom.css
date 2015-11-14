@@ -23,3 +23,7 @@ File Description: Place here your custom CSS styles
 .btn-default { background-color: #c40005; border-color: #c40006;}
 
 .list-inline i { color: #c40005; }
+
+.modal-content .modal-header { background-color: #c40005; }
+
+.btn-default:hover, .btn-default:active, .btn-default:focus { background-color: black; border-color: white;}

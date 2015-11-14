@@ -39,6 +39,10 @@
 		<link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
 		<link href="plugins/hover/hover-min.css" rel="stylesheet">
 		<link href="plugins/morphext/morphext.css" rel="stylesheet">
+
+		<!-- Bower CSS -->
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  		<link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
 		
 		<!-- the project core CSS file -->
 		<link href="css/style.css" rel="stylesheet" >
@@ -126,6 +130,7 @@
 														<li><a href="#banner">Home</a></li>
 														<li><a href="#about">About</a></li>
 														<li><a href="#services">Services</a></li>
+														<li><a href="#" data-toggle="modal" data-target="#book-modal">Book</a></li>
 														<li><a href="#footer">Contact</a></li>
 													</ul>
 												</div>
@@ -416,6 +421,24 @@
 						<div class="col-sm-3">
 							<div class="team-member image-box style-2 shadow bordered light-gray-bg text-center">
 								<div class="overlay-container overlay-visible">
+									<img src="images/team/marlissa.jpg" alt="">
+									<div class="overlay-bottom">
+										<ul class="social-links circle dark margin-clear">
+											<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="body">
+									<h3 class="margin-clear">Marlissa Rossenaar</h3>
+									<small>Sales</small>
+									<div class="separator mt-10"></div>
+									<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates praesentium nulla cupiditate!</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="team-member image-box style-2 shadow bordered light-gray-bg text-center">
+								<div class="overlay-container overlay-visible">
 									<img src="images/team/emmanuel.jpg" alt="">
 									<div class="overlay-bottom">
 										<ul class="social-links circle dark margin-clear">
@@ -467,6 +490,8 @@
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="row grid-space-10">
 						<div class="col-sm-3">
 							<div class="team-member image-box style-2 shadow bordered light-gray-bg text-center">
 								<div class="overlay-container overlay-visible">
@@ -485,8 +510,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row grid-space-10">
 						<div class="col-sm-3">
 							<div class="team-member image-box style-2 shadow bordered light-gray-bg text-center">
 								<div class="overlay-container overlay-visible">
@@ -537,53 +560,56 @@
 						<div class="col-md-8 col-md-offset-2">
 							<h2 class="text-center title">Our <strong>Services</strong></h2>
 							<div class="separator"></div>
-							<p class="large text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptas facere vero ex tempora saepe perspiciatis ducimus sequi animi.</p>
+							<p class="large text-center">At WeAreIn, we offer some excellent services to our parents.</p>
 						</div>
 						<div class="col-sm-4">
 							<div class="image-box style-2 mb-20">
 								<div class="overlay-container overlay-visible">
-									<img src="images/service-1.jpg" alt="">
-									<a href="images/service-1.jpg" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
+									<img src="images/aupair.jpg" alt="" style="width: 360px; height: 222px;">
+									<a href="images/aupair.jpg" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
 									<div class="overlay-bottom hidden-xs">
 										<div class="text">
-											<p class="lead margin-clear text-left">Service One</p>
+											<p class="lead margin-clear text-left">Au Pairing</p>
 										</div>
 									</div>
 								</div>
 								<div class="body padding-horizontal-clear">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque ipsam nihil, adipisci rem minus? Voluptatem distinctio laborum porro aspernatur.</p>
+									<p>Our standard Au Pair service costs &euro;10 per hour. If you need to make a booking less than 2 hours in advance, a charge of &euro;15 per hour applies.</p>
+									<p style="text-align: center;"><a href="#" class="btn btn-animated btn-lg btn-default" data-toggle="modal" data-target="#book-modal">Book Now <i class="fa fa-calendar-check-o"></i></a></p>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="image-box style-2 mb-20">
 								<div class="overlay-container overlay-visible">
-									<img src="images/service-2.jpg" alt="">
-									<a href="images/service-2.jpg" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
+									<img src="images/tutoring.jpg" alt="" style="width: 360px; height: 222px;">
+									<a href="images/tutoring.jpg" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
 									<div class="overlay-bottom hidden-xs">
 										<div class="text">
-											<p class="lead margin-clear text-left">Service One</p>
+											<p class="lead margin-clear text-left">English tutoring</p>
 										</div>
 									</div>
 								</div>
 								<div class="body padding-horizontal-clear">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque ipsam nihil, adipisci rem minus? Voluptatem distinctio laborum porro aspernatur.</p>
+									<p>Our additional services include English tutoring by playful activities (reading books etc). Books are provided.</p>
+									<p style="text-align: center;"><a href="#" class="btn btn-animated btn-lg btn-default" data-toggle="modal" data-target="#book-modal">Book Now <i class="fa fa-calendar-check-o"></i></a></p>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="image-box style-2 mb-20">
 								<div class="overlay-container overlay-visible">
-									<img src="images/service-3.jpg" alt="">
-									<a href="images/service-3.jpg" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
+									<img src="images/cooking.jpg" alt="" style="width: 360px; height: 222px;">
+									<a href="images/cooking.jpg" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
 									<div class="overlay-bottom hidden-xs">
 										<div class="text">
-											<p class="lead margin-clear text-left">Service One</p>
+											<p class="lead margin-clear text-left">Cooking &amp; other services</p>
 										</div>
 									</div>
 								</div>
 								<div class="body padding-horizontal-clear">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque ipsam nihil, adipisci rem minus? Voluptatem distinctio laborum porro aspernatur.</p>
+									<p>Cooking is also part of our service. Any other services can be added on for an additonal amount. Grocery shopping, cleaning etc.</p>
+									<p style="text-align: center;"><a href="#" class="btn btn-animated btn-lg btn-default" data-toggle="modal" data-target="#book-modal">Book Now <i class="fa fa-calendar-check-o"></i></a></p>
 								</div>
 							</div>
 						</div>
@@ -591,6 +617,77 @@
 				</div>
 			</section>
 			<!-- section end -->
+
+			<!-- Modal -->
+			<div class="modal fade" id="book-modal" tabindex="-1" role="dialog" aria-labelledby="Book Now" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<h4 class="modal-title" id="booknowlabel">Make a booking</h4>
+						</div>
+						<div class="modal-body">
+							<form role="form">
+								<div class="form-group">
+									<label for="id_first_name">First Name</label>
+									<input type="text" class="form-control" id="id_first_name">
+								</div>
+								<div class="form-group">
+									<label for="id_last_name">Last Name</label>
+									<input type="text" class="form-control" id="id_last_name">
+								</div>
+								<div class="form-group">
+									<label for="id_email">Email</label>
+									<input type="email" class="form-control" id="id_email">
+								</div>
+								<div class="form-group">
+									<label for="id_start_date">Date</label>
+					                <div class='input-group date' id='id_start_date_picker'>
+					                    <input type='text' class="form-control" id="id_start_date" />
+					                    <span class="input-group-addon">
+					                        <span class="glyphicon glyphicon-calendar"></span>
+					                    </span>
+					                </div>
+					            </div>
+					            <div class="form-group">
+									<label>Additional Services</label>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											English tutoring
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											Cooking
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											Cleaning
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											Grocery shopping
+										</label>
+									</div>
+								</div>
+					            <div class="form-group">
+									<label for="id_message">Message</label>
+									<textarea class="form-control" rows="3"></textarea>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-sm btn-default">Book</button>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
 			<!-- ================ -->
@@ -717,6 +814,10 @@
 		<!-- SmoothScroll javascript -->
 		<script type="text/javascript" src="plugins/jquery.browser.js"></script>
 		<script type="text/javascript" src="plugins/SmoothScroll.js"></script>
+
+		<!-- Bower javascript -->
+  		<script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+  		<script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 
 		<!-- Initialization of Plugins -->
 		<script type="text/javascript" src="js/template.js"></script>
