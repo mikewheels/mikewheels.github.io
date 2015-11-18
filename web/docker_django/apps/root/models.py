@@ -9,6 +9,9 @@ class BookingAdditionalService(models.Model):
         blank=True,
         null=True)
 
+    def __str__(self):
+        return '%s' % self.title
+
 
 class Booking(models.Model):
     first_name = models.CharField(max_length=255)
@@ -22,9 +25,15 @@ class Booking(models.Model):
     message = models.TextField(blank=True, null=True)
     timestamp = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return '%s %s' % (self.first_name, self.last_name)
+
 
 class ContactMessage(models.Model):
     name = models.CharField(max_length=512)
     email = models.EmailField()
     message = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return '%s' % self.name
