@@ -17,6 +17,7 @@ class Booking(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     email = models.EmailField(max_length=255)
+    mobile = models.CharField(max_length=50, blank=True, null=True)
     book_date = models.DateTimeField()
     additional_services = models.ManyToManyField(
         BookingAdditionalService,

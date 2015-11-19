@@ -1,5 +1,7 @@
 from django.conf.urls import url
 
+from honeypot.decorators import check_honeypot
+
 from . import views, forms
 
 urlpatterns = [
@@ -8,10 +10,10 @@ urlpatterns = [
         name='home'),
 
     url(r'^contact/$',
-        views.Contact.as_view(form_class=forms.ContactForm),
+        check_honeypot(views.Contact.as_view(form_class=forms.ContactForm)),
         name='contact'),
 
     url(r'^book/$',
-        views.Contact.as_view(form_class=forms.BookForm),
+        check_honeypot(views.Contact.as_view(form_class=forms.BookForm)),
         name='book'),
 ]

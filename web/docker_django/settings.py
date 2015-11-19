@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # apps
     'docker_django.apps.root',
+    'honeypot',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -113,3 +114,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
+
+# Honeypot Settings
+
+HONEYPOT_FIELD_NAME = "phone"
