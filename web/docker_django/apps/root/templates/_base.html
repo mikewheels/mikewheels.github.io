@@ -7,9 +7,8 @@
 
   <head>
     <meta charset="utf-8">
-    <title>We are International Nannies | Home</title>
+    <title>We are International Nannies | International Nanny service in Leeuwarden, The Netherlands</title>
     <meta name="description" content="International Nanny service in Leeuwarden, The Netherlands">
-    <meta name="author" content="htmlcoder.me">
 
     <!-- Mobile Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -558,12 +557,12 @@
                   <a href="{% static 'root/images/aupair.jpg' %}" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
                   <div class="overlay-bottom hidden-xs">
                     <div class="text">
-                      <p class="lead margin-clear text-left">Au Pairing</p>
+                      <p class="lead margin-clear text-left">Nannying</p>
                     </div>
                   </div>
                 </div>
                 <div class="body padding-horizontal-clear">
-                  <p>Our standard Au Pair service costs &euro;10 per hour. If you need to make a booking less than 2 hours in advance, a charge of &euro;15 per hour applies.</p>
+                  <p>Our standard Nanny service costs &euro;10 per hour. If you need to make a booking less than 2 hours in advance, a charge of &euro;15 per hour applies.</p>
                   <p style="text-align: center;"><a href="#" class="btn btn-animated btn-lg btn-default" data-toggle="modal" data-target="#book-modal">Book Now <i class="fa fa-calendar-check-o"></i></a></p>
                 </div>
               </div>
@@ -641,15 +640,16 @@
                 </div>
                 {% render_honeypot_field %}
                 <div class="form-group">
-                  <label for="id_start_date">Date</label>
-                          <div class='input-group date' id='id_start_date_picker'>
-                              <input type='text' class="form-control required" id="id_start_date" name="book_date" />
-                              <span class="input-group-addon">
-                                  <span class="glyphicon glyphicon-calendar"></span>
-                              </span>
-                          </div>
-                      </div>
-                      <div class="form-group">
+                    <label for="id_start_date">Date</label>
+                    <div class='input-group date' id='id_start_date_picker'>
+                        <input type='text' class="form-control required" id="id_start_date" name="book_date" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                    <p class="help-block">We are available to take bookings from 3pm weekdays and all day Saturdays and Sundays.</p>
+                </div>
+                <div class="form-group">
                   <label>Additional Services</label>
                   <div class="checkbox">
                     <label>
@@ -831,5 +831,16 @@
 
     <!-- Custom Scripts -->
     <script type="text/javascript" src="{% static 'root/js/custom.js' %}"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-70612060-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
