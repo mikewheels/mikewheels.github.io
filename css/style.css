@@ -475,8 +475,6 @@ tbody {
 .banner.dark-translucent-bg,
 .banner.default-translucent-bg {
   min-height: 250px;
-  padding-top: 60px;
-  padding-bottom: 20px;
 }
 .banner.banner-big-height {
   min-height: 550px;
@@ -1010,7 +1008,7 @@ tbody {
   display: none;
 }
 .fixed-header-on .header .logo img {
-  max-height: 30px;
+  max-height: 50px;
 }
 .fixed-header-on .header .site-slogan,
 .fixed-header-on .header.centered .header-left {
@@ -1508,6 +1506,10 @@ h5 + .separator {
   .text-center-xs {
     text-align: center;
   }
+}
+.logo img {
+  width: 50px;
+  height: 50px;
 }
 /* 3 Sections
 ----------------------------------------------------------------------------- */
@@ -7101,7 +7103,7 @@ h6.media-heading {
 /*Nav Controls*/
 /*Prev/Next Nav Controls*/
 .tparrows.preview2 {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(233, 41, 41, 0.4);
   color: #ffffff;
   -webkit-border-radius: 0px 3px 3px 0;
   -moz-border-radius: 0px 3px 3px 0;
@@ -7198,7 +7200,7 @@ h6.media-heading {
 }
 .tp-bullets.preview4 .bullet,
 .tp-bullets.preview2 .bullet {
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(255, 255, 255, 0.6) !important;
   border: none!important;
   width: 10px !important;
   height: 10px !important;
@@ -7212,14 +7214,14 @@ h6.media-heading {
 .tp-bullets.preview4 .bullet.selected,
 .tp-bullets.preview2 .bullet:hover,
 .tp-bullets.preview2 .bullet.selected {
-  background: #000000 !important;
+  background: #ffffff !important;
   border: none!important;
   width: 10px !important;
   height: 10px !important;
 }
 .tp-bannertimer {
   background-image: none;
-  background-color: rgba(9, 175, 223, 0.8);
+  background-color: rgba(233, 41, 41, 0.8);
   z-index: 21;
   display: none;
   height: 2px;
@@ -7482,4 +7484,8 @@ h6.media-heading {
     background: #000000;
   }
 }
-/*# sourceMappingURL=style.css.map */
+.owl-item {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}

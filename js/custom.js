@@ -7,6 +7,3 @@
  * License URI:http://support.wrapbootstrap.com/
  * File Description: Place here your custom scripts
  */
-$(function () {
-    $('#id_start_date').datetimepicker();
-});
